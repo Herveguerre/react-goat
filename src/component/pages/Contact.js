@@ -4,8 +4,8 @@ import Footer from '../Footer'
 
 export default function Contact() {
   return (
-    <div className='  text-center  text-2xl text-white '>Contact
-    <Header />
+    <div className='  text-end text-2xl text-white  '>Contact
+    <div className='bg-gray-950' ><Header /></div>
     <div className='p-40 h-[650px]  bg-slate-500 w-full  space-x-5 gap-4 border-solid  justify-center '>
         <div className='p-2'>
           <label  for="prenom">Premon</label>
@@ -23,6 +23,10 @@ export default function Contact() {
           <label  for="email">Email</label>
           <input className='border-black mb-5' type="text" class="form-control" id="nom" name="nom" required></input>
         </div>
+        <div className='p-2'> 
+          <button  className='border-black  mb-5' for="submit">envoyer</button>
+          
+        </div>
           
 
 
@@ -31,7 +35,7 @@ export default function Contact() {
 
 
     </div>
-    <Footer/>
+    <div className='bg-gray-950' ><Footer/></div>
     
     </div>
   )
