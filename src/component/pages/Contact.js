@@ -3,13 +3,16 @@ import Header from '../Header'
 import Footer from '../Footer'
 
 export default function Contact() {
-  const [input, setInput]= useState([]);
+ // const [input, setInput]= useState([]);
+//  const value = event.target.value;
+// const name = event.target.name;
+// setInputs(value=>({}))
 
   const [show, setShow] = useState(false);
   const [count, setCount] = useState("+0");
   const handleClick = ()=>{
     alert("message envoyer")
-  }
+  };
   return (
 
   <div className='  text-end text-2xl text-white  '>
