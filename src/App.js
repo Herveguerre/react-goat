@@ -9,12 +9,17 @@ import ErrorPage from "./component/pages/ErrorPage";
 import Contact from "./component/pages/Contact";
 import Navbar from "./component/Navbar";
 import BilPage from "./component/pages/BilPage";
+import Yoda from "./component/pages/Yoda";
+//import { useState } from "react";
 
-
+//color={color}
 function App() {
+//  const[color, setColor] = useState("bg-blue-600");
   return (
     <Router>
-      <Navbar/>
+      <Navbar 
+        />
+
       <Routes>
         <Route path="/" element={<StevePage />} />
         <Route path="/mark" element={<MarkPage />} />
@@ -23,6 +28,7 @@ function App() {
         <Route path="/*" element={<ErrorPage />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Bil" element={<BilPage />} />
+        <Route path="/Yoda" element={<Yoda />} />
       </Routes>
     </Router>
   );
